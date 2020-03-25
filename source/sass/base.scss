@@ -1,0 +1,118 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $graphite;
+
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.container {
+  box-sizing: border-box;
+
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  &--gapless {
+    padding: 0;
+  }
+
+  &--nav {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-size) {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 50px;
+
+    &--gapless {
+      width: 100%;
+      padding: 0 50px;
+    }
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 50px;
+
+    &--gapless {
+      width: 100%;
+      padding: 0 50px;
+    }
+
+    &--index {
+      padding-left: 225px;
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+}
+
+.modal {
+  z-index: 9000;
+  position: fixed;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8999;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+}

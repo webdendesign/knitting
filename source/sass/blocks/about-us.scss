@@ -1,0 +1,199 @@
+.about-us {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-size) {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-top: 58px;
+  }
+}
+
+.about-us__title {
+  margin-left: -2px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-size) {
+    margin-bottom: 50px;
+  }
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-size) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.about-us__item {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    background-repeat: no-repeat;
+  }
+
+  &--flower {
+    &::before {
+      top: 0;
+      left: 9px;
+
+      width: 32px;
+      height: 37px;
+
+      background-image: url("../img/icon-feature-flower.svg");
+      background-size: 32px 37px;
+    }
+  }
+
+  &--banknote {
+    &::before {
+      top: 1px;
+      left: 0;
+
+      width: 47px;
+      height: 27px;
+
+      background-image: url("../img/icon-feature-money.svg");
+      background-size: 47px 27px;
+    }
+  }
+
+  &--heart {
+    &::before {
+      top: 5px;
+      left: 8px;
+
+      width: 33px;
+      height: 28px;
+
+      background-image: url("../img/icon-feature-heart.svg");
+      background-size: 33px 28px;
+    }
+  }
+
+  &--wool {
+    &::before {
+      top: 2px;
+      left: 4px;
+
+      width: 34px;
+      height: 34px;
+
+      background-image: url("../img/icon-feature-ball.svg");
+      background-size: 34px 34px;
+    }
+  }
+
+  &--rocket {
+    &::before {
+      top: 4px;
+      left: -5px;
+
+      width: 54px;
+      height: 23px;
+
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-size: 54px 23px;
+    }
+  }
+
+  &--gift {
+    &::before {
+      top: 2px;
+      left: 3px;
+
+      width: 33px;
+      height: 32px;
+
+      background-image: url("../img/icon-feature-gift.svg");
+      background-size: 33px 32px;
+    }
+  }
+
+  @media (min-width: $tablet-size) {
+    width: 50%;
+    max-width: 350px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--banknote {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--wool {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
+}
+
+.about-us__text {
+  width: 200px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-top: 53px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+
+  &--flower {
+    width: 190px;
+  }
+
+  &--wool {
+    width: 220px;
+  }
+
+  &--rocket {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-size) {
+    width: 300px;
+    margin-bottom: 58px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--flower {
+      width: 230px;
+    }
+
+    &--banknote,
+    &--heart,
+    &--gift {
+      width: 240px;
+    }
+  }
+}

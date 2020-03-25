@@ -1,0 +1,9 @@
+.page-header {
+  width: 100%;
+
+  background-color: $white;
+
+  @media (min-width: $tablet-size) {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,52 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 181px;
+  margin: auto;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+  padding: 8px 20px;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  transition: ease-in-out 0.2s;
+
+  &--instagram {
+    width: 21px;
+    height: 20px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 29px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.social__icon {
+  fill: #231f20;
+}
